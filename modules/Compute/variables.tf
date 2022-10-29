@@ -1,0 +1,12 @@
+variable "ami" {}
+variable "instance_type" {}
+variable "instance_count" {}
+variable "key_name" {}
+variable "security_groups" {}
+variable "public_subnet" {}
+variable "user_data" {}
+variable "app_tier_sg" {}
+variable "project_tier_target_group_arn" {}
+variable "app_tier_target_group_arn" {}
+variable "bastion_sg" {}
+variable "private_subnet_app_tier" {}
