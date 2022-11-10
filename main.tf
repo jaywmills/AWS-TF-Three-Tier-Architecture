@@ -1,12 +1,12 @@
 module "AutoScalingGroups" {
-  source = "./modules/Auto Scaling Groups"
+  source          = "./modules/Auto Scaling Groups"
   instance_type   = var.instance_type
   security_groups = module.SecurityGroups.public_http_sg
   public_subnets  = module.Networking.aws_public_subnet
 }
 
 module "ec2_instances" {
-  source = "./modules/Compute"
+  source                        = "./modules/Compute"
   ami                           = var.ami
   instance_type                 = var.instance_type
   instance_count                = 2
